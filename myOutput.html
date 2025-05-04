@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes</title>
+
+    <style>
+
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height : 100vh;
+            width : 100%;
+            display: flex;
+        }
+        .rite_container{
+            height: 100%;
+            width : 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .top_text{
+            position: absolute;
+            top: 15%;
+            left : 10%;
+            color : white
+        }
+        .bottom_text{
+            position: absolute;
+            bottom: 15%;
+            left: 10%;
+            color : white
+        }
+        .picture{
+            height : 80%;
+            width : 80%;
+            border: 1px solid;
+            position: relative;
+        }
+        .image1{
+            height :100%;
+            width  : 100%;
+            position: absolute;
+        }
+        .left_container{
+            height: 100%;
+            width : 50%;
+        }
+        .head{
+            margin-top: 150px;
+        }
+        .para1{
+            margin-top: 20px;
+        }
+        .input1{
+            height : 40px;
+            width : 620px;
+            margin-top: 10px;
+        }
+        .para2{
+            margin-top: 20px;
+        }
+        .input2{
+            height : 40px;
+            width : 620px;
+            margin-top: 10px;
+        }
+        .para3{
+            margin-top: 20px;
+        }
+        .input3{
+            height : 40px;
+            width : 620px;
+            margin-top: 10px;
+        }
+        .btn{
+            height : 30px;
+            width : 100px;
+            border: none;
+            border-radius: 5px;
+            background-color: burlywood;
+            color : white ;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <section class = "main">
+        <div class = "rite_container">
+            <div class = "picture">
+                <img class = "image1" src="https://careersplay.com/wp-content/uploads/2022/02/kittens-cute-cat-images-for-whatsapp-dp.jpg">
+                <h1 class="top_text">I made a meme maker</h1>
+                <h1 class="bottom_text">how do I end my life?</h1></div>
+        </div>
+        <div class = "left_container">
+            <h2 class = "head">Create Meme</h2>
+            <p class = "para1">Image URL</p>
+            <input type="text" class = "input1" >
+            <p class = "para2">Top Text</p>
+            <input type="text" class = "input2">
+            <p class = "para3">Bottom Text</p>
+            <input type="text" class = "input3">
+            <button class = "btn" onclick="makeMeme()">Make Meme</button>
+        </div>
+        
+    </section>
+
+    <!-- <script src="./myOutput.js"></script> -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
